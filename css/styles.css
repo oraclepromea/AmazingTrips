@@ -1,0 +1,61 @@
+/* ...new CSS file for Amazing Trips... */
+:root{
+  --brand:#0b6b4f;
+  --muted:#65747a;
+  --accent:#ffb400;
+  --bg:#fafafa;
+  --max-width:1100px;
+  --gap:1.25rem;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  color:#1b2b2a;
+  background:var(--bg);
+  -webkit-font-smoothing:antialiased;
+}
+.container{max-width:var(--max-width);margin:0 auto;padding:0 1rem}
+.site-header{background:#fff;border-bottom:1px solid #e6e6e6}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:1rem 0}
+.brand{margin:0;color:var(--brand);font-weight:700;letter-spacing:0.5px}
+.nav a{color:var(--muted);text-decoration:none;margin-left:1rem}
+.nav a:hover{color:var(--brand)}
+.hero{position:relative;overflow:hidden;border-bottom:1px solid rgba(0,0,0,0.05);display:flex;align-items:center}
+.hero-inner{position:relative;z-index:2;padding:3rem 1rem}
+.hero h2{margin:0 0 .5rem;font-size:clamp(1.5rem,3vw,2.25rem)}
+.hero p{margin:0 0 1rem;color:var(--muted)}
+.hero .btn{display:inline-block}
+.hero-img{position:absolute;right:0;top:0;bottom:0;width:60%;height:100%;object-fit:cover;filter:brightness(.66)}
+@media(max-width:880px){
+  .hero-img{position:static;width:100%;height:260px}
+  .hero-inner{padding:1.25rem}
+}
+.main{padding:2rem 0}
+.tours{padding:2rem 0}
+.tour-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--gap)}
+@media(max-width:800px){.tour-grid{grid-template-columns:1fr}}
+.tour{background:#fff;padding:1rem;border-radius:8px;box-shadow:0 6px 18px rgba(18,30,30,0.04)}
+.tour h4{margin:0 0 .25rem}
+.price{color:var(--brand);font-weight:700}
+.btn{background:#fff;border:1px solid #ddd;color:var(--brand);padding:.5rem .75rem;border-radius:6px;text-decoration:none;font-weight:600}
+.btn.primary{background:var(--brand);color:#fff;border:0}
+.btn.whatsapp{background:#25D366;color:#fff;border:0}
+.btn.large{padding:.75rem 1rem;font-size:1.05rem}
+.gallery{padding:2rem 0}
+.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.gallery-grid img{width:100%;height:160px;object-fit:cover;border-radius:6px;display:block}
+@media(max-width:1000px){.gallery-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:700px){.gallery-grid{grid-template-columns:repeat(2,1fr)}}
+/* Modal / Lightbox */
+.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.8);display:none;align-items:center;justify-content:center;z-index:9999}
+.lightbox.active{display:flex}
+.lightbox .inner{max-width:90vw;max-height:90vh;position:relative}
+.lightbox img{max-width:100%;max-height:100%;border-radius:6px}
+.lightbox .close{position:absolute;right:-10px;top:-10px;background:#fff;border-radius:50%;width:36px;height:36px;display:flex;align-items:center;justify-content:center;cursor:pointer}
+.lightbox .nav{position:absolute;top:50%;transform:translateY(-50%);width:100%;display:flex;justify-content:space-between;pointer-events:none}
+.lightbox .nav button{pointer-events:auto;background:transparent;border:0;color:#fff;font-size:2rem;padding:0 1rem;cursor:pointer}
+.contact{padding:2rem 0;text-align:center}
+.site-footer{padding:1.25rem 0;text-align:center;color:var(--muted);border-top:1px solid #e8e8e8;background:#fff;margin-top:2rem}
+.small{font-size:.9rem;color:var(--muted)}
