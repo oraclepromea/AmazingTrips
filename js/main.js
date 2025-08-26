@@ -2,48 +2,27 @@
 (function() {
   'use strict';
 
-  // Gallery images array
+  // Curated gallery images array (duplicates removed)
   const images = [
     'Images/Hero Image.jpeg',
     'Images/WhatsApp Image 2025-08-25 at 16.06.12 (1).jpeg',
     'Images/WhatsApp Image 2025-08-25 at 16.06.12 (3).jpeg',
-    'Images/WhatsApp Image 2025-08-25 at 16.06.12.jpeg',
-    'Images/WhatsApp Image 2025-08-25 at 16.06.13 (1).jpeg',
     'Images/WhatsApp Image 2025-08-25 at 16.06.13 (2).jpeg',
-    'Images/WhatsApp Image 2025-08-25 at 16.06.13 (3).jpeg',
     'Images/WhatsApp Image 2025-08-25 at 16.06.13 (4).jpeg',
-    'Images/WhatsApp Image 2025-08-25 at 16.06.13 (5).jpeg',
     'Images/WhatsApp Image 2025-08-25 at 16.06.13 (6).jpeg',
     'Images/WhatsApp Image 2025-08-25 at 16.06.13 (7).jpeg',
-    'Images/WhatsApp Image 2025-08-25 at 16.06.13.jpeg',
-    'Images/WhatsApp Image 2025-08-25 at 16.06.14 (1).jpeg',
     'Images/WhatsApp Image 2025-08-25 at 16.06.14 (2).jpeg',
     'Images/WhatsApp Image 2025-08-25 at 16.06.14 (3).jpeg',
-    'Images/WhatsApp Image 2025-08-25 at 16.06.14 (4).jpeg',
     'Images/WhatsApp Image 2025-08-25 at 16.06.14 (5).jpeg',
-    'Images/WhatsApp Image 2025-08-25 at 16.06.14 (6).jpeg',
-    'Images/WhatsApp Image 2025-08-25 at 16.06.14 (7).jpeg',
     'Images/WhatsApp Image 2025-08-25 at 16.06.14 (8).jpeg',
     'Images/WhatsApp Image 2025-08-25 at 16.06.14 (9).jpeg',
-    'Images/WhatsApp Image 2025-08-25 at 16.06.14.jpeg',
     'Images/WhatsApp Image 2025-08-25 at 16.06.15 (1).jpeg',
-    'Images/WhatsApp Image 2025-08-25 at 16.06.15 (2).jpeg',
-    'Images/WhatsApp Image 2025-08-25 at 16.06.15 (3).jpeg',
     'Images/WhatsApp Image 2025-08-25 at 16.06.15 (4).jpeg',
-    'Images/WhatsApp Image 2025-08-25 at 16.06.15 (5).jpeg',
     'Images/WhatsApp Image 2025-08-25 at 16.06.15 (6).jpeg',
-    'Images/WhatsApp Image 2025-08-25 at 16.06.15 (7).jpeg',
     'Images/WhatsApp Image 2025-08-25 at 16.06.15 (8).jpeg',
-    'Images/WhatsApp Image 2025-08-25 at 16.06.15 (9).jpeg',
-    'Images/WhatsApp Image 2025-08-25 at 16.06.15.jpeg',
-    'Images/WhatsApp Image 2025-08-25 at 16.06.16 (1).jpeg',
     'Images/WhatsApp Image 2025-08-25 at 16.06.16 (2).jpeg',
-    'Images/WhatsApp Image 2025-08-25 at 16.06.16 (3).jpeg',
     'Images/WhatsApp Image 2025-08-25 at 16.06.16 (4).jpeg',
-    'Images/WhatsApp Image 2025-08-25 at 16.06.16 (5).jpeg',
     'Images/WhatsApp Image 2025-08-25 at 16.06.16 (6).jpeg',
-    'Images/WhatsApp Image 2025-08-25 at 16.06.16 (7).jpeg',
-    'Images/WhatsApp Image 2025-08-25 at 16.06.16.jpeg',
     'Images/WhatsApp Image 2025-08-25 at 16.06.17.jpeg'
   ];
 
