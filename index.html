@@ -3,16 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Amazing Trips — Rurrenabaque, Bolivia</title>
+  <title>Amazing Trips — Tours en Rurrenabaque, Bolivia</title>
 
   <!-- Production meta tags -->
-  <meta name="description" content="Amazing Trips — Excursiones a las Pampas, Cañón del Bala y Selva Madidi desde Rurrenabaque. Tours guiados, alojamiento en comunidad y experiencias con fauna local.">
-  <meta name="keywords" content="Rurrenabaque, Pampas, Cañón del Bala, Madidi, tours, Bolivia, delfines rosados, pesca pirañas">
-  <meta name="theme-color" content="#0b6b4f">
+  <meta name="description" content="Amazing Trips — Excursiones profesionales a las Pampas, Cañón del Bala y Selva Madidi desde Rurrenabaque. Tours guiados con alojamiento en comunidad y experiencias únicas con fauna amazónica.">
+  <meta name="keywords" content="Rurrenabaque, Pampas, Cañón del Bala, Madidi, tours, Bolivia, delfines rosados, pesca pirañas, turismo responsable">
+  <meta name="theme-color" content="#1a4d3a">
 
   <!-- Open Graph / Twitter -->
-  <meta property="og:title" content="Amazing Trips — Rurrenabaque, Bolivia">
-  <meta property="og:description" content="Tours a las Pampas, Cañón del Bala y Selva Madidi. Reserva por WhatsApp +591 7848 1534">
+  <meta property="og:title" content="Amazing Trips — Tours Profesionales en Rurrenabaque">
+  <meta property="og:description" content="Descubre la Amazonía boliviana con nuestros tours guiados. Pampas, Cañón del Bala y Selva Madidi. Reserva: +591 7848 1534">
   <meta property="og:image" content="Images/Hero Image.jpeg">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
@@ -21,94 +21,346 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
   <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
 
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <h1 class="brand">Amazing Trips</h1>
-      <nav class="nav">
-        <a href="#tours">Tours</a>
-        <a href="#gallery">Galería</a>
-        <a href="#contact">Contacto</a>
-      </nav>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-icon">🌿</span>
+        Amazing Trips
+      </a>
+      <div class="nav-menu" id="nav-menu">
+        <a href="#home" class="nav-link">Inicio</a>
+        <a href="#about" class="nav-link">Nosotros</a>
+        <a href="#tours" class="nav-link">Tours</a>
+        <a href="#gallery" class="nav-link">Galería</a>
+        <a href="#contact" class="nav-link">Contacto</a>
+        <a href="https://wa.me/59178481534" class="nav-link nav-cta">
+          <span class="whatsapp-icon">📱</span>
+          WhatsApp
+        </a>
+      </div>
+      <div class="nav-toggle" id="nav-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
     </div>
-  </header>
+  </nav>
 
-  <section class="hero">
-    <div class="hero-inner container">
-      <h2>Explora la Amazonía — Rurrenabaque</h2>
-      <p>Vive experiencias únicas en las Pampas, el Cañón del Bala y la Selva Madidi.</p>
-      <a class="btn primary" href="#tours">Ver Tours</a>
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-title">Descubre la Amazonía Boliviana</h1>
+        <p class="hero-subtitle">Vive experiencias únicas en las Pampas, el Cañón del Bala y la Selva Madidi con guías especializados y turismo responsable.</p>
+        <div class="hero-buttons">
+          <a href="#tours" class="btn btn-primary">Ver Tours</a>
+          <a href="https://wa.me/59178481534" class="btn btn-outline">
+            <span class="btn-icon">📱</span>
+            Reservar Ahora
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number">500+</span>
+            <span class="stat-label">Turistas Felices</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">4</span>
+            <span class="stat-label">Tours Únicos</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">15+</span>
+            <span class="stat-label">Años de Experiencia</span>
+          </div>
+        </div>
+      </div>
     </div>
-    <img class="hero-img" src="Images/Hero Image.jpeg" alt="Pampas — Hero"/>
+    <div class="hero-image">
+      <img src="Images/Hero Image.jpeg" alt="Amazonía Boliviana - Rurrenabaque" loading="eager">
+    </div>
   </section>
 
-  <main class="container">
-    <section id="tours" class="tours">
-      <h3>Nuestros Tours</h3>
-      <div class="tour-grid">
-        <article class="tour">
-          <h4>Pampas — 3 días / 2 noches</h4>
-          <p class="price">Precio: $180</p>
-          <ul>
-            <li>Día 1: Salida 10:00 AM desde la agencia hacia Santa Rosa — Almuerzo incluido — Navegación ~3 horas</li>
-            <li>Día 2: Amanecer, desayuno buffet, caminata buscando anacondas (3–4 h), natación con delfines, navegación nocturna</li>
-            <li>Día 3: Pesca de pirañas — Retorno a Rurrenabaque (15:30–16:30)</li>
-          </ul>
-          <a class="btn whatsapp" href="https://wa.me/59178481534?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20Tour%20Pampas%203%20d%C3%ADas%202%20noches">Reservar por WhatsApp</a>
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">¿Quiénes Somos?</span>
+        <h2 class="section-title">Tu Aventura Amazónica Comienza Aquí</h2>
+        <p class="section-description">Somos una agencia local especializada en turismo responsable y sostenible en Rurrenabaque, Bolivia. Nuestro compromiso es ofrecerte experiencias auténticas mientras preservamos la rica biodiversidad de la región.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="about-icon">🌱</div>
+          <h3>Turismo Sostenible</h3>
+          <p>Trabajamos con comunidades locales para promover un turismo que beneficie tanto a visitantes como a la región.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon">👥</div>
+          <h3>Guías Especializados</h3>
+          <p>Nuestro equipo cuenta con guías nativos con amplio conocimiento de la flora, fauna y cultura local.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon">🛡️</div>
+          <h3>Seguridad Garantizada</h3>
+          <p>Todos nuestros tours cumplen con los más altos estándares de seguridad y cuentan con equipos de primeros auxilios.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tours Section -->
+  <section class="tours" id="tours">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Nuestras Experiencias</span>
+        <h2 class="section-title">Tours Diseñados Para Ti</h2>
+        <p class="section-description">Desde aventuras de un día hasta expediciones de múltiples días, tenemos el tour perfecto para cada tipo de viajero.</p>
+      </div>
+      
+      <div class="tours-grid">
+        <!-- Tour 1: Pampas -->
+        <article class="tour-card">
+          <div class="tour-image">
+            <img src="Images/WhatsApp Image 2025-08-25 at 16.06.13 (2).jpeg" alt="Tour Pampas" loading="lazy">
+            <div class="tour-badge">Más Popular</div>
+          </div>
+          <div class="tour-content">
+            <div class="tour-header">
+              <h3 class="tour-title">Pampas Amazónicas</h3>
+              <div class="tour-duration">3 días / 2 noches</div>
+            </div>
+            <p class="tour-description">Navega por los ríos observando delfines rosados, caimanes y anacondas. Incluye pesca de pirañas y navegación nocturna.</p>
+            <ul class="tour-highlights">
+              <li>🐬 Natación con delfines rosados</li>
+              <li>🐍 Búsqueda de anacondas</li>
+              <li>🎣 Pesca de pirañas</li>
+              <li>🌅 Amanecer y atardecer amazónicos</li>
+            </ul>
+            <div class="tour-footer">
+              <div class="tour-price">
+                <span class="price-amount">$180</span>
+                <span class="price-label">por persona</span>
+              </div>
+              <a href="https://wa.me/59178481534?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20Tour%20Pampas%203%20d%C3%ADas%202%20noches" class="btn btn-tour">Reservar</a>
+            </div>
+          </div>
         </article>
 
-        <article class="tour">
-          <h4>Cañón del Bala — Excursión de día</h4>
-          <p class="price">Precio: $90</p>
-          <ul>
-            <li>Salida 08:00 AM en bote (40 min) — Caminata 1.5 h — Visita a la comunidad San Miguel del Bala</li>
-            <li>Retorno 12:00 a Rurrenabaque</li>
-          </ul>
-          <a class="btn whatsapp" href="https://wa.me/59178481534?text=Hola%2C%20quiero%20reservar%20el%20Tour%20Ca%C3%B1%C3%B3n%20del%20Bala%20(1%20d%C3%ADa)">Reservar por WhatsApp</a>
+        <!-- Tour 2: Cañón del Bala -->
+        <article class="tour-card">
+          <div class="tour-image">
+            <img src="Images/WhatsApp Image 2025-08-25 at 16.06.14 (3).jpeg" alt="Cañón del Bala" loading="lazy">
+          </div>
+          <div class="tour-content">
+            <div class="tour-header">
+              <h3 class="tour-title">Cañón del Bala</h3>
+              <div class="tour-duration">1 día</div>
+            </div>
+            <p class="tour-description">Explora el impresionante cañón y visita la comunidad San Miguel del Bala para conocer sus tradiciones ancestrales.</p>
+            <ul class="tour-highlights">
+              <li>🏞️ Paisajes espectaculares</li>
+              <li>🥾 Caminata guiada</li>
+              <li>🏘️ Comunidad indígena</li>
+              <li>🍯 Molienda de caña tradicional</li>
+            </ul>
+            <div class="tour-footer">
+              <div class="tour-price">
+                <span class="price-amount">$90</span>
+                <span class="price-label">por persona</span>
+              </div>
+              <a href="https://wa.me/59178481534?text=Hola%2C%20quiero%20reservar%20el%20Tour%20Ca%C3%B1%C3%B3n%20del%20Bala%20(1%20d%C3%ADa)" class="btn btn-tour">Reservar</a>
+            </div>
+          </div>
         </article>
 
-        <article class="tour">
-          <h4>Pampas + Cañón — 3 días / 2 noches</h4>
-          <p class="price">Precio: $200</p>
-          <ul>
-            <li>Combinación de actividades en Pampas con salida al Cañón del Bala incluida (08:00 AM)</li>
-            <li>Natación con delfines, pesca de pirañas y más.</li>
-          </ul>
-          <a class="btn whatsapp" href="https://wa.me/59178481534?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20Tour%20Pampas%20y%20Ca%C3%B1%C3%B3n">Reservar por WhatsApp</a>
+        <!-- Tour 3: Pampas + Cañón -->
+        <article class="tour-card">
+          <div class="tour-image">
+            <img src="Images/WhatsApp Image 2025-08-25 at 16.06.15 (4).jpeg" alt="Pampas + Cañón" loading="lazy">
+            <div class="tour-badge">Combo</div>
+          </div>
+          <div class="tour-content">
+            <div class="tour-header">
+              <h3 class="tour-title">Pampas + Cañón</h3>
+              <div class="tour-duration">3 días / 2 noches</div>
+            </div>
+            <p class="tour-description">La combinación perfecta: aventura en las Pampas con la majestuosidad del Cañón del Bala en un solo paquete.</p>
+            <ul class="tour-highlights">
+              <li>🌊 Lo mejor de ambos mundos</li>
+              <li>💰 Ahorro en combo</li>
+              <li>🗓️ Itinerario optimizado</li>
+              <li>📸 Máxima variedad fotográfica</li>
+            </ul>
+            <div class="tour-footer">
+              <div class="tour-price">
+                <span class="price-amount">$200</span>
+                <span class="price-label">por persona</span>
+              </div>
+              <a href="https://wa.me/59178481534?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20Tour%20Pampas%20y%20Ca%C3%B1%C3%B3n" class="btn btn-tour">Reservar</a>
+            </div>
+          </div>
         </article>
 
-        <article class="tour">
-          <h4>Combinado Pampas + Selva Madidi — 4 días / 3 noches</h4>
-          <p class="price">Precio: $380</p>
-          <ul>
-            <li>Día 1–2: Pampas — navegación, delfines, pesca de pirañas, retorno a Rurrenabaque</li>
-            <li>Día 2 (tarde)–4: Selva Madidi — navegación por ríos Beni y Tuichi, caminatas, alojamiento en comunidad</li>
-          </ul>
-          <a class="btn whatsapp" href="https://wa.me/59178481534?text=Hola%2C%20quiero%20reservar%20el%20Tour%20Combinado%20Pampas%20y%20Selva%20Madidi">Reservar por WhatsApp</a>
+        <!-- Tour 4: Combinado -->
+        <article class="tour-card tour-featured">
+          <div class="tour-image">
+            <img src="Images/WhatsApp Image 2025-08-25 at 16.06.16 (2).jpeg" alt="Pampas + Selva Madidi" loading="lazy">
+            <div class="tour-badge">Experiencia Completa</div>
+          </div>
+          <div class="tour-content">
+            <div class="tour-header">
+              <h3 class="tour-title">Pampas + Selva Madidi</h3>
+              <div class="tour-duration">4 días / 3 noches</div>
+            </div>
+            <p class="tour-description">La experiencia amazónica más completa: Pampas + inmersión total en la Selva Madidi con alojamiento en comunidad.</p>
+            <ul class="tour-highlights">
+              <li>🏕️ Alojamiento en comunidad</li>
+              <li>🌿 Parque Nacional Madidi</li>
+              <li>🦋 Biodiversidad excepcional</li>
+              <li>🌙 Caminatas nocturnas</li>
+            </ul>
+            <div class="tour-footer">
+              <div class="tour-price">
+                <span class="price-amount">$380</span>
+                <span class="price-label">por persona</span>
+              </div>
+              <a href="https://wa.me/59178481534?text=Hola%2C%20quiero%20reservar%20el%20Tour%20Combinado%20Pampas%20y%20Selva%20Madidi" class="btn btn-tour">Reservar</a>
+            </div>
+          </div>
         </article>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="gallery" class="gallery">
-      <h3>Galería</h3>
-      <p>Fotos reales de nuestras excursiones en Pampas, Cañón del Bala y Selva Madidi.</p>
-      <div id="galleryGrid" class="gallery-grid" aria-live="polite"></div>
-    </section>
-
-    <section id="contact" class="contact">
-      <h3>Contacto</h3>
-      <p>Reserva y atención por WhatsApp: <strong>+591 7848 1534</strong></p>
-      <a class="btn whatsapp large" href="https://wa.me/59178481534?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20tours%20de%20Amazing%20Trips">Contactar por WhatsApp</a>
-    </section>
-  </main>
-
-  <footer class="site-footer">
+  <!-- Gallery Section -->
+  <section class="gallery" id="gallery">
     <div class="container">
-      <p>© 2025 Amazing Trips — Rurrenabaque, Bolivia</p>
+      <div class="section-header">
+        <span class="section-badge">Nuestras Aventuras</span>
+        <h2 class="section-title">Galería de Experiencias</h2>
+        <p class="section-description">Fotos reales de nuestras expediciones capturadas por nuestros huéspedes y guías profesionales.</p>
+      </div>
+      <div class="gallery-grid" id="galleryGrid"></div>
+      <div class="gallery-actions">
+        <button class="btn btn-outline" id="loadMore">Ver Más Fotos</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h2 class="contact-title">¿Listo Para Tu Aventura?</h2>
+          <p class="contact-description">Contáctanos para planificar tu experiencia amazónica perfecta. Nuestro equipo está disponible para resolver todas tus dudas.</p>
+          
+          <div class="contact-methods">
+            <div class="contact-method">
+              <div class="contact-icon">📱</div>
+              <div class="contact-details">
+                <h3>WhatsApp</h3>
+                <p>+591 7848 1534</p>
+                <span class="contact-note">Disponible 24/7</span>
+              </div>
+            </div>
+            <div class="contact-method">
+              <div class="contact-icon">📍</div>
+              <div class="contact-details">
+                <h3>Ubicación</h3>
+                <p>Rurrenabaque, Bolivia</p>
+                <span class="contact-note">Puerta de entrada a la Amazonía</span>
+              </div>
+            </div>
+            <div class="contact-method">
+              <div class="contact-icon">⏰</div>
+              <div class="contact-details">
+                <h3>Horarios</h3>
+                <p>Lun - Dom: 6:00 - 22:00</p>
+                <span class="contact-note">Siempre disponibles por WhatsApp</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="https://wa.me/59178481534?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20tours%20de%20Amazing%20Trips" class="btn btn-whatsapp">
+            <span class="btn-icon">📱</span>
+            Contactar por WhatsApp
+          </a>
+        </div>
+        
+        <div class="contact-visual">
+          <div class="contact-card">
+            <h3>¿Por qué elegirnos?</h3>
+            <ul class="benefits-list">
+              <li>✅ Guías locales certificados</li>
+              <li>✅ Grupos pequeños (máx. 8 personas)</li>
+              <li>✅ Equipo de seguridad incluido</li>
+              <li>✅ Turismo responsable</li>
+              <li>✅ Precios transparentes</li>
+              <li>✅ Garantía de satisfacción</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-icon">🌿</span>
+            Amazing Trips
+          </div>
+          <p class="footer-description">Tu puerta de entrada a las maravillas de la Amazonía boliviana. Turismo responsable y experiencias únicas desde 2010.</p>
+        </div>
+        
+        <div class="footer-links">
+          <div class="footer-section">
+            <h4>Tours</h4>
+            <ul>
+              <li><a href="#tours">Pampas</a></li>
+              <li><a href="#tours">Cañón del Bala</a></li>
+              <li><a href="#tours">Selva Madidi</a></li>
+              <li><a href="#tours">Combos</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-section">
+            <h4>Información</h4>
+            <ul>
+              <li><a href="#about">Nosotros</a></li>
+              <li><a href="#gallery">Galería</a></li>
+              <li><a href="#contact">Contacto</a></li>
+              <li><a href="#">Términos</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Amazing Trips. Todos los derechos reservados. | Rurrenabaque, Bolivia</p>
+        <div class="footer-social">
+          <a href="https://wa.me/59178481534" class="social-link">WhatsApp</a>
+        </div>
+      </div>
     </div>
   </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Volver arriba">↑</button>
 
   <script src="js/main.js"></script>
 </body>
