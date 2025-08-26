@@ -449,8 +449,8 @@
           title: 'Tu Aventura Amazónica Comienza Aquí',
           desc: 'Somos una agencia local especializada en turismo responsable y sostenible en Rurrenabaque, Bolivia. Nuestro compromiso es ofrecerte experiencias auténticas mientras preservamos la rica biodiversidad de la región.',
           cards: [
-            ['🌱', 'Turismo Sostenible', 'Trabajamos con comunidades locales para promover un turismo que beneficie tanto a visitantes como a la región.'],
-            ['👥', 'Guías Especializados', 'Nuestro equipo cuenta con guías nativos con amplio conocimiento de la flora, fauna y cultura local.'],
+            ['🌱', 'Turismo Sostenible', 'Trabajamos con comunidades locales y utilizamos ecolodges para promover un turismo que beneficie tanto a visitantes como a la región.'],
+            ['👥', 'Guías Especializados', 'Nuestro equipo cuenta con guías nativos que hablan inglés y tienen amplio conocimiento de la flora, fauna y cultura local.'],
             ['🛡️', 'Seguridad Garantizada', 'Todos nuestros tours cumplen con los más altos estándares de seguridad y cuentan con equipos de primeros auxilios.']
           ]
         },
@@ -459,8 +459,8 @@
           title: 'Your Amazon Adventure Starts Here',
           desc: 'We are a local agency specializing in responsible and sustainable tourism in Rurrenabaque, Bolivia. Our commitment is to offer authentic experiences while preserving the region’s rich biodiversity.',
           cards: [
-            ['🌱', 'Sustainable Tourism', 'We work with local communities to promote tourism that benefits both visitors and the region.'],
-            ['👥', 'Expert Guides', 'Our team includes native guides with extensive knowledge of local flora, fauna, and culture.'],
+            ['🌱', 'Sustainable Tourism', 'We work with local communities and use ecolodges to promote tourism that benefits both visitors and the region.'],
+            ['👥', 'Expert Guides', 'Our team includes native guides who speak English and have extensive knowledge of local flora, fauna, and culture.'],
             ['🛡️', 'Guaranteed Safety', 'All our tours meet the highest safety standards and include first aid equipment.']
           ]
         }
@@ -590,6 +590,7 @@
           altNumber: '+591 7286 2223',
           localCalls: 'Llamadas y mensajes locales',
           contactBtn: 'Contactar por WhatsApp',
+          instagramBtn: 'Síguenos en Instagram',
           whyUs: '¿Por qué elegirnos?',
           benefits: [
             '✅ Guías locales certificados',
@@ -616,6 +617,7 @@
           altNumber: '+591 7286 2223',
           localCalls: 'Local calls and messages',
           contactBtn: 'Contact via WhatsApp',
+          instagramBtn: 'Follow us on Instagram',
           whyUs: 'Why choose us?',
           benefits: [
             '✅ Certified local guides',
@@ -787,6 +789,9 @@
         // Contact button
         const contactBtn = contactSection.querySelector('.btn-whatsapp');
         if (contactBtn) contactBtn.textContent = `📱 ${translations.contact[lang].contactBtn}`;
+        // Instagram button (update only the text span, not the icon)
+        const instagramBtnText = contactSection.querySelector('#instagramBtnText');
+        if (instagramBtnText) instagramBtnText.textContent = translations.contact[lang].instagramBtn;
         // Why us
         const whyUsTitle = contactSection.querySelector('.contact-card h3');
         if (whyUsTitle) whyUsTitle.textContent = translations.contact[lang].whyUs;

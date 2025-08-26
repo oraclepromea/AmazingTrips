@@ -193,6 +193,22 @@ p { margin-bottom: 1rem; }
   transform: translateY(-1px);
 }
 
+/* Instagram Button (Gradient) */
+.btn-instagram {
+  background: linear-gradient(90deg, #fd5c63 0%, #fcae3e 50%, #833ab4 100%);
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  box-shadow: 0 4px 20px rgba(253, 92, 99, 0.15);
+  transition: var(--transition);
+}
+.btn-instagram:hover {
+  background: linear-gradient(90deg, #833ab4 0%, #fd5c63 100%);
+  color: #fff;
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 8px 30px rgba(131, 58, 180, 0.18);
+}
+
 /* Hero section button enhancements */
 .hero .btn-outline {
   background: var(--secondary);
@@ -964,7 +980,7 @@ lightbox img {
   transition: var(--transition-fast);
 }
 
-.lightbox .nav button:hover {
+lightbox .nav button:hover {
   background: var(--white);
 }
 
