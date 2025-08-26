@@ -152,15 +152,22 @@ p { margin-bottom: 1rem; }
 }
 
 .btn-outline {
-  background: transparent;
+  background: rgba(255, 255, 255, 0.9);
   color: var(--primary);
-  border: 2px solid var(--primary);
+  border: 2px solid var(--white);
+  backdrop-filter: blur(10px);
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .btn-outline:hover {
-  background: var(--primary);
-  color: var(--white);
-  transform: translateY(-2px);
+  background: var(--white);
+  color: var(--primary);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  border-color: var(--white);
 }
 
 .btn-whatsapp {
@@ -184,6 +191,38 @@ p { margin-bottom: 1rem; }
 .btn-tour:hover {
   background: var(--accent);
   transform: translateY(-1px);
+}
+
+/* Hero section button enhancements */
+.hero .btn-outline {
+  background: var(--secondary);
+  color: var(--white);
+  border: 2px solid var(--secondary);
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 20px rgba(244, 162, 97, 0.3);
+  animation: pulse 2s infinite;
+}
+
+.hero .btn-outline:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--white);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 30px rgba(231, 111, 81, 0.4);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 4px 20px rgba(244, 162, 97, 0.3);
+  }
+  50% {
+    box-shadow: 0 4px 30px rgba(244, 162, 97, 0.6);
+  }
+  100% {
+    box-shadow: 0 4px 20px rgba(244, 162, 97, 0.3);
+  }
 }
 
 /* Navigation */
