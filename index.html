@@ -37,11 +37,15 @@
         Amazing Trips
       </a>
       <div class="nav-menu" id="nav-menu">
-        <a href="#home" class="nav-link">Inicio</a>
-        <a href="#about" class="nav-link">Nosotros</a>
-        <a href="#tours" class="nav-link">Tours</a>
-        <a href="#gallery" class="nav-link">Galería</a>
-        <a href="#contact" class="nav-link">Contacto</a>
+        <div class="nav-links-group">
+          <a href="#home" class="nav-link">Inicio</a>
+          <a href="#about" class="nav-link">Nosotros</a>
+          <a href="#tours" class="nav-link">Tours</a>
+          <a href="#gallery" class="nav-link">Galería</a>
+          <a href="#contact" class="nav-link">Contacto</a>
+        </div>
+        <button id="lang-es" class="nav-lang-btn" aria-label="Español" title="Español">ES</button>
+        <button id="lang-en" class="nav-lang-btn" aria-label="English" title="English">EN</button>
         <a href="https://wa.me/59178481534" class="nav-link nav-cta">
           <span class="whatsapp-icon">📅</span>
           Book Now
@@ -118,6 +122,21 @@
     </div>
   </section>
 
+  <!-- Gallery Section -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Nuestras Aventuras</span>
+        <h2 class="section-title">Galería de Experiencias</h2>
+        <p class="section-description">Fotos reales de nuestras expediciones capturadas por nuestros huéspedes y guías profesionales.</p>
+      </div>
+      <div class="gallery-grid" id="galleryGrid"></div>
+      <div class="gallery-actions">
+        <button class="btn btn-outline" id="loadMore">Ver Más Fotos</button>
+      </div>
+    </div>
+  </section>
+
   <!-- Tours Section -->
   <section class="tours" id="tours">
     <div class="container">
@@ -155,11 +174,10 @@
             </div>
           </div>
         </article>
-
         <!-- Tour 2: Cañón del Bala -->
         <article class="tour-card">
           <div class="tour-image">
-            <img src="Images/WhatsApp Image 2025-08-25 at 16.06.14 (3).jpeg" alt="Cañón del Bala" loading="lazy">
+            <img src="Images/optimized/Bala Canyon.jpeg" alt="Cañón del Bala" loading="lazy">
           </div>
           <div class="tour-content">
             <div class="tour-header">
@@ -242,17 +260,94 @@
     </div>
   </section>
 
-  <!-- Gallery Section -->
-  <section class="gallery" id="gallery">
+  <!-- Detailed Itinerary Section (Tabbed) -->
+  <section class="itinerary" id="itinerary">
     <div class="container">
       <div class="section-header">
-        <span class="section-badge">Nuestras Aventuras</span>
-        <h2 class="section-title">Galería de Experiencias</h2>
-        <p class="section-description">Fotos reales de nuestras expediciones capturadas por nuestros huéspedes y guías profesionales.</p>
+        <span class="section-badge">Itinerarios</span>
+        <h2 class="section-title">Itinerario Detallado</h2>
+        <p class="section-description">Selecciona un tour para ver el itinerario detallado día por día. Puedes reservar directamente desde cada pestaña.</p>
       </div>
-      <div class="gallery-grid" id="galleryGrid"></div>
-      <div class="gallery-actions">
-        <button class="btn btn-outline" id="loadMore">Ver Más Fotos</button>
+      <div class="itinerary-tabs">
+        <button class="itinerary-tab active" data-tab="pampas">Pampas</button>
+        <button class="itinerary-tab" data-tab="canon">Cañón del Bala</button>
+        <button class="itinerary-tab" data-tab="combo">Pampas + Cañón</button>
+        <button class="itinerary-tab" data-tab="madidi">Pampas + Selva Madidi</button>
+      </div>
+      <div class="itinerary-contents">
+        <div class="itinerary-content active" id="tab-pampas">
+          <article class="itinerary-card">
+            <h3>Pampas — 3 días / 2 noches — $180</h3>
+            <ul>
+              <li><strong>Día 1</strong>
+                <ul>
+                  <li>Salida 10:00 AM desde la agencia hacia Santa Rosa</li>
+                  <li>Almuerzo en Santa Rosa (incluido)</li>
+                  <li>Navegación de ~3 horas observando fauna: capibaras, lagartos, tortugas, monos, etc.</li>
+                  <li>Cena y descanso</li>
+                  <li>Navegación nocturna para disfrutar el sonido de la noche y observar ojos de lagartos</li>
+                </ul>
+              </li>
+              <li><strong>Día 2</strong>
+                <ul>
+                  <li>05:00 salida para ver el amanecer</li>
+                  <li>07:30 desayuno (buffet)</li>
+                  <li>08:00 caminata buscando anacondas (3–4 horas aprox.)</li>
+                  <li>12:00 almuerzo</li>
+                  <li>Siesta</li>
+                  <li>15:00 natación con delfines</li>
+                  <li>17:30 salida para ver el atardecer</li>
+                  <li>19:00 cena</li>
+                  <li>20:00 navegación en bote nocturna</li>
+                </ul>
+              </li>
+              <li><strong>Día 3</strong>
+                <ul>
+                  <li>07:30 desayuno</li>
+                  <li>Pesca de pirañas</li>
+                  <li>12:00 almuerzo</li>
+                  <li>Retorno a Rurrenabaque (llegada estimada 15:30–16:30)</li>
+                </ul>
+              </li>
+            </ul>
+            <a href="https://wa.me/59178481534?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20Tour%20Pampas%203%20d%C3%ADas%202%20noches" class="btn btn-tour">Reservar / WhatsApp</a>
+          </article>
+        </div>
+        <div class="itinerary-content" id="tab-canon">
+          <article class="itinerary-card">
+            <h3>Cañón del Bala — Excursión de día — $90</h3>
+            <ul>
+              <li>Salida 08:00 AM en bote (40 minutos)</li>
+              <li>Caminata ~1.5 horas: observación de insectos, plantas medicinales y paisaje</li>
+              <li>Visita a la comunidad San Miguel del Bala: molienda de caña de azúcar y costumbres locales</li>
+              <li>12:00 retorno a Rurrenabaque — fin del tour</li>
+            </ul>
+            <a href="https://wa.me/59178481534?text=Hola%2C%20quiero%20reservar%20el%20Tour%20Ca%C3%B1%C3%B3n%20del%20Bala%20(1%20d%C3%ADa)" class="btn btn-tour">Reservar / WhatsApp</a>
+          </article>
+        </div>
+        <div class="itinerary-content" id="tab-combo">
+          <article class="itinerary-card">
+            <h3>Pampas + Cañón — 3 días / 2 noches — $200</h3>
+            <ul>
+              <li><strong>Día 1</strong>: Salida 10:00 AM hacia Santa Rosa, almuerzo incluido, navegación ~3 horas, cena y descanso</li>
+              <li><strong>Día 2</strong>: Salida temprana al Cañón del Bala (08:00 AM) — bote 40 min, caminata y visita a comunidad; por la tarde actividades en pampas (natación con delfines o pesca de pirañas según el programa)</li>
+              <li><strong>Día 3</strong>: Desayuno, actividades finales y retorno a Rurrenabaque</li>
+            </ul>
+            <a href="https://wa.me/59178481534?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20Tour%20Pampas%20y%20Ca%C3%B1%C3%B3n" class="btn btn-tour">Reservar / WhatsApp</a>
+          </article>
+        </div>
+        <div class="itinerary-content" id="tab-madidi">
+          <article class="itinerary-card">
+            <h3>Combinado Pampas + Selva Madidi — 4 días / 3 noches — $380</h3>
+            <ul>
+              <li><strong>Día 1 (Pampas)</strong>: Salida 10:00 AM desde la agencia hacia Santa Rosa, almuerzo incluido, navegación ~3 horas, cena. Navegación nocturna y descanso.</li>
+              <li><strong>Día 2 (Pampas / Traslado a Selva)</strong>: Desayuno buffet, natación con delfines rosados, pesca de pirañas, almuerzo y retorno a Rurrenabaque (llegada 15:30–16:30). 17:00 salida hacia Selva Madidi; navegación 20 minutos por el río Beni. Llegada a la comunidad, acomodación en albergue, cena y caminata nocturna (~2 horas).</li>
+              <li><strong>Día 3 (Selva)</strong>: Desayuno, navegación ~3 horas por el río Beni y el río Tuichi hasta el campamento, almuerzo, caminata hacia el parabal para fotografía, siesta y más caminatas por senderos, cena. Opcional caminata nocturna o descanso.</li>
+              <li><strong>Día 4 (Retorno)</strong>: Desayuno, caminata matinal y retorno a Rurrenabaque.</li>
+            </ul>
+            <a href="https://wa.me/59178481534?text=Hola%2C%20quiero%20reservar%20el%20Tour%20Combinado%20Pampas%20y%20Selva%20Madidi" class="btn btn-tour">Reservar / WhatsApp</a>
+          </article>
+        </div>
       </div>
     </div>
   </section>
@@ -288,6 +383,14 @@
                 <h3>Horarios</h3>
                 <p>Lun - Dom: 6:00 - 22:00</p>
                 <span class="contact-note">Siempre disponibles por WhatsApp</span>
+              </div>
+            </div>
+            <div class="contact-method">
+              <div class="contact-icon">📞</div>
+              <div class="contact-details">
+                <h3>Teléfono Alternativo</h3>
+                <p>+591 7286 2223</p>
+                <span class="contact-note">Llamadas y mensajes locales</span>
               </div>
             </div>
           </div>
